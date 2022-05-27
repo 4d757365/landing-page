@@ -171,10 +171,52 @@ ul{
 
 .quote p{
     display: flex;
-    font-size: 36px;
+    flex-wrap: wrap;
+    font-size: 3.0vh;
     font-style: italic;
     
 }
+.action{
+    display: flex;
+    background-color: white;
+    min-height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.action .container{
+    background: #0a51cc;
+    color: white;  
+    border-radius: 10px;
+    margin: 1z0px 10px;
+    padding: 29px 81px;
+    padding-bottom: 15px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6); 
+}
+
+.action button{
+    background-color: #0a51cc;
+    color: white;
+     padding: 14px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     font-weight: bold;
+     margin: 19px 0px;
+     cursor: pointer;
+     border-radius: 20px;
+     font-family: 'Poppins';
+}
+
+.footer{
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
 
 
 @media(max-width: 768px)
@@ -190,11 +232,10 @@ ul{
         text-align: center;
     }
 
-    .quote .container{
+    .quote {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        
     }
 }
